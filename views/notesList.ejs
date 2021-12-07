@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/universityClasses.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <title>Classes</title>
+</head>
+<body>
+    <%- include('partials/navBar') %>
+    <div id="container">
+    <div>
+    <h1>Current Notes:</h1>
+    <ul>
+    <% for (let ele of notes) {%>
+    <button id="classes" onclick="location.href='/notesdetail/<%= ele._id %>';" type="button" class="btn btn-outline-primary"><%= ele.title %>: <strong><%= ele.subject %> </strong></button>
+    <% } %>
+</ul>
+</div>
+</div>
+</body>
+</html>

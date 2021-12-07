@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+#container{
+    font-family: 'Lora', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
+#classes{
+    display: block;
+    width: 23vw;
+    height: 7vh;
+    margin: 2vw;
+    font-size: 1.6vw;
+    color:burlywood;
+}

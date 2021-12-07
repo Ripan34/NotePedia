@@ -1,0 +1,34 @@
+body{
+    background-color: #607D8B;
+    min-height: 100vh;
+}
+#notes{
+    width: 100%;
+    height: 120px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    box-shadow: 5px 8px #616161;
+}
+#block{
+    margin: auto;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+#titleLink{
+    color: #5B8E7D;
+    text-decoration-line: none;
+    font-family: 'Fjalla One', sans-serif;
+}
+h1{
+    color: #E9E8EB;
+}
+#secondaryText{
+    color: #666666;
+}
+a{
+    font-size: 30px;
+    color: #E9E8EB;
+    font-family: 'Montserrat', sans-serif;
+}

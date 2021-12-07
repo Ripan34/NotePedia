@@ -1,0 +1,25 @@
+#inputForm{
+    padding-bottom: 20px;
+}
+#inputs{
+    margin-right: 2vw;
+    margin-left: -1.5vw;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    color: #0a1d18;
+}
+#block{
+    display: flex;
+    justify-content: space-around;
+}
+label{
+    color: #30292f;
+}
+#editor{
+    width: 80vw;
+    height: 78vh;
+}

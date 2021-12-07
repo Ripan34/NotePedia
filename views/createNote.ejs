@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Note</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/createNote.css">
+    <script src="/js/bootstrap.min.js"></script>
+
+    <%- include('partials/googleFonts') %>
+
+</head>
+<body>
+    <%- include('partials/navBar') %>
+
+    <h1>Create a new Note</h1>
+
+    <div id = "block">
+   
+    <form id="inputForm" action="/notes" method="POST" class="row g-3 needs-validation" novalidate>
+      <div id = "block">
+
+      <div id="inputs">
+        <div style="margin-bottom: 1vw;" class="form-group">
+          <label for="title">Enter a Title</label>
+          <input type="text" name="title" class="form-control" id="title" placeholder="Title" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        
+      <div style="margin-bottom: 1vw;" class="form-group">
+        <label for="subject">Enter the Subject</label>
+        <input type="text" name="subject" class="form-control" id="subject" placeholder="Subject" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="classN">Class Name</label>
+        <input type="text" name="className" class="form-control" id="classN" placeholder="Class Name" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+    </div>
+      <div id="editor" class="form-group">
+        <textarea name="content" class="tinymce" id="myTextarea"></textarea>
+        <script src="/js/jquery.js"></script>
+        <script src="/plugins/tinymce/tinymce.min.js"></script>
+        <script src="/js/init-tinymce.js"></script>
+        <button style="margin-top: 0.5vw;" class="btn btn-success">Create Note</button>
+      </div>
+
+      </div>
+
+    </form>
+</body>
+<script src="/js/createNote.js"></script>
+
+</html>

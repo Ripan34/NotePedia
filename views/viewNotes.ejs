@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/viewNotes.css">
+    <%- include('partials/googleFonts') %>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <%- include('partials/navBar') %>
+    <h1 style="text-align: center; margin: 20px;">Notes</h1>
+    <div id="block" class="d-flex flex-column">
+        <%for(let i of data){ %>
+    <div id="notes" class="p-2">
+        <div style="display: flex; justify-content: space-between;">
+        <h1><a id="titleLink"href="/notes/<%= i.id %> "> <%= i.title %></a></h1>
+        <div>Subject: <%= i.subject %></div>
+        </div>
+        <p id="secondaryText">1+1 = 2 only and only if 1+1 = 2 only and only if 1+1 = 2 only and only if 1+1 = 2 only and only if
+            1+1 = 2 only and only if... </p>
+      </div>
+   <% } %>
+</body> 
+</html>
